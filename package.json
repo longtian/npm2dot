@@ -4,7 +4,8 @@
   "description": "convert npm dependency list to graphviz format",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha ./test"
+    "test": "node_modules/.bin/mocha ./test",
+    "publish-patch":"mocha && npm version patch && git push && git push --tags && npm publish"
   },
   "bin": {
     "npm2dot": "./bin/npm2dot"
