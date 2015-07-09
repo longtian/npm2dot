@@ -9,18 +9,18 @@ Convert npm dependency list to dot file which can be visualized using graphviz
 **Install**
 
 ```sh
-npm isntall npm2dot -g
+npm install npm2dot -g
 ```
 
 **Usage**
 
-1\. In a `Node.js` package folder, type in command line:
+1\. In a `Node.js` package folder, type in console:
 
 ```sh
 npm ls --json | npm2dot
 ```
 
-2\. `npm2dot` will write following content to stdout:
+2\. By default `npm2dot` will write following content to stdout:
 
 ```
 digraph{
@@ -30,13 +30,17 @@ digraph{
 }
 ```
 
-3\. The output can be piped to Graphviz:
+3\. This output can be piped to `Graphviz` to generate a picture:
 
 ```sh
 npm ls --json | npm2dot | dot -Tpng -o debug.png -Grankdit=LR
 ```
 
+Picture `debug.png` is very simple because [`debug`](https://www.npmjs.com/package/debug) has only one dependency:
+
 ![debug.png](doc/debug.png)
+
+That's how `npm2dot` interacts with `npm ls` and `Graphviz`. More complicated use cases are:
 
 ## Use Case 1 : Comparison of folder structure installed separately using NPM2 and NPM3
 
@@ -80,10 +84,12 @@ Express Development Environment
 
 ![express#development](doc/express.dev.png)
 
-## Attention
+## About
 
-`npm2dot` converts `npm ls --json` result to `.dot` file format, it will not generate the picture directly for you.
+1\. `Graphviz` can be downloaded at [http://www.graphviz.org/Download.php](http://www.graphviz.org/Download.php).
 
-To generate the picture you need install [Graphviz](http://www.graphviz.org/Download.php).
+2\. Anyone can fork this repo to provide more interesting use cases.
+
+3\. Please include a link to original [github repo](https://github.com/wyvernnot/npm2dot), if you want to use any pictures on this page.
 
 
