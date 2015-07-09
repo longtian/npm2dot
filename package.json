@@ -1,0 +1,29 @@
+{
+  "name": "npm2dot",
+  "version": "0.0.1",
+  "description": "convert npm dependency list to graphviz format",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha ./test"
+  },
+  "bin": {
+    "npm2dot": "./bin/npm2dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyvernnot/npm2dot.git"
+  },
+  "keywords": [
+    "graphviz"
+  ],
+  "author": "wyvernnot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wyvernnot/npm2dot/issues"
+  },
+  "homepage": "https://github.com/wyvernnot/npm2dot#readme",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "preferGlobal": true
+}

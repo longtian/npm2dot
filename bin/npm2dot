@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var buffer = "";
+
+process.stdin.on('data', function (newData) {
+    buffer += newData;
+});
+
+process.stdin.on('close', function () {
+    require('../')(buffer, process.stdout);
+});

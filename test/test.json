@@ -1,0 +1,28 @@
+{
+  "name": "a",
+  "version": "1.2.3",
+  "dependencies": {
+    "b": {
+      "version": "2"
+    },
+    "c": {
+      "version": "2"
+    },
+    "d": {
+      "version": "2",
+      "dependencies": {
+        "f": {
+          "version": 1
+        }
+      }
+    },
+    "e": {
+      "version": "2",
+      "dependencies": {
+        "f": {
+          "version": 1
+        }
+      }
+    }
+  }
+}
