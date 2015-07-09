@@ -6,12 +6,19 @@ Convert npm dependency list to dot file which can be visualized using graphviz
 
 [![NPM](https://nodei.co/npm/npm2dot.png)](https://nodei.co/npm/npm2dot/)
 
-# Install from NPM
+**Install**
+
 ```sh
 npm isntall npm2dot -g
 ```
 
-## Sample Usage
+## Attention
+
+`npm2dot` converts `npm ls --json` result to `.dot` file format, it will not generate the picture directly for you.
+
+To see the picture you need install [Graphviz](http://www.graphviz.org/Download.php).
+
+## Example Usage
 
 ```sh
 npm ls --json | npm2dot | dot -Tsvg -o /tmp/dot.svg -Grankdir=LR 
@@ -21,10 +28,23 @@ npm ls --json | npm2dot | dot -Tsvg -o /tmp/dot.svg -Grankdir=LR
 npm ls --json | npm2dot | twopi -Tsvg -o /tmp/twopi.svg -Granksep=4
 ```
 
-## Example Output
+## Use Case
 
-npm@2
-![npm2](doc/oneapm@npm2.svg)
+NPM3 is currently in beta, one of the most expected feature is [flatten structure](http://www.infoq.com/news/2015/06/npm) :
 
-npm@3
-![npm3](doc/oneapm@npm3.svg)
+> Dependencies will now be installed maximally flat. Insofar as is possible, all of your dependencies,
+> and their dependencies, and THEIR dependencies will be installed in your project's node_modules folder with no nesting. 
+> You'll only see modules nested underneath one another when two (or more) modules have conflicting dependencies.
+
+Using `npm2dot` and `Graphviz` will help you clearly understand this change:
+
+Before, the dependencies is install with npm@2.x
+
+![npm2](doc/oneapmfed@npm2.png)
+
+If we use npm@3.x (`npm install npm@3.x-next -g`) to install dependencies, there are less nodes in the structure
+
+![npm3](doc/oneapmfed@npm3.png)
+
+
+
