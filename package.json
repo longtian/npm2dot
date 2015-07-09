@@ -1,6 +1,6 @@
 {
   "name": "npm2dot",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "convert npm dependency list to graphviz format",
   "main": "index.js",
   "scripts": {
