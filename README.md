@@ -33,7 +33,7 @@ digraph{
 3\. This output can be piped to `Graphviz` to generate a picture:
 
 ```sh
-npm ls --json | npm2dot | dot -Tpng -o debug.png -Grankdit=LR
+npm ls --json | npm2dot | dot -Tpng -o debug.png -Grankdir=LR
 ```
 
 Picture `debug.png` is very simple because [`debug`](https://www.npmjs.com/package/debug) has only one dependency:
