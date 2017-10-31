@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wyvernnot/npm2dot.git"
+    "url": "git+https://github.com/longtian/npm2dot.git"
   },
   "keywords": [
     "graphviz"
@@ -20,9 +20,9 @@
   "author": "longtian",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wyvernnot/npm2dot/issues"
+    "url": "https://github.com/longtian/npm2dot/issues"
   },
-  "homepage": "https://github.com/wyvernnot/npm2dot#readme",
+  "homepage": "https://github.com/longtian/npm2dot#readme",
   "devDependencies": {
     "mocha": "^2.2.5"
   },
