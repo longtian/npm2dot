@@ -1,6 +1,6 @@
 # npm2dot
 ![NPM](https://david-dm.org/wyvernnot/npm2dot.svg)
-[![Build Status](https://travis-ci.org/wyvernnot/npm2dot.svg?branch=master)](https://travis-ci.org/wyvernnot/npm2dot)
+[![Build Status](https://travis-ci.org/longtian/npm2dot.svg?branch=master)](https://travis-ci.org/longtian/npm2dot)
 
 Convert npm dependency list to dot file which can be visualized using graphviz
 
