@@ -1,20 +1,19 @@
 "use strict";
-var assert = require('assert');
 
+var assert = require('assert');
 var path = require('path');
 var fs = require('fs');
+var convertFunc = require('../');
 
 var MockStream = function () {
   this.buffer = "";
-}
+};
 
 MockStream.prototype.write = function (data) {
   this.buffer += data;
-}
+};
 
 describe('npm2dot', function () {
-  var convertFunc = require('../');
-
   it('should be defined', function () {
     assert.ok(convertFunc);
   });

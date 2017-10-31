@@ -90,6 +90,6 @@ Express Development Environment
 
 2\. Anyone can fork this repo to provide more interesting use cases.
 
-3\. Please include a link to original [github repo](https://github.com/wyvernnot/npm2dot), if you want to use any pictures on this page.
+3\. Please include a link to original [github repo](https://github.com/longtian/npm2dot), if you want to use any pictures on this page.
 
 

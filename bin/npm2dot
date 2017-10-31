@@ -6,5 +6,6 @@ process.stdin.on('data', function (newData) {
 });
 
 process.stdin.on('close', function () {
+    // collect all data from stdin pipeline
     require('../')(buffer, process.stdout);
 });
